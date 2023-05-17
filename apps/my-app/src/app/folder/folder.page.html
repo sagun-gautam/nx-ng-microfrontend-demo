@@ -1,0 +1,25 @@
+<!-- <ion-content [fullscreen]="true"> -->
+  <!-- <ul class="remote-menu">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="feature-a">FeatureA</a></li>
+  </ul> -->
+  <div id="container">
+    <strong class="capitalize">Main App</strong>
+    <div class="detail">
+      <h1>User Detail</h1>
+      <p>Click: {{ userName | async}}</p>
+      <p>User is logged in: {{isUserLoggedIn | async}}</p>
+      <p>User is active: {{isUserActive | async}}</p>
+      <!-- <p> {{ savedPicture | async | json }}</p> -->
+      <ion-button (click)="changeStatus()" color="primary" size="small">Change Status</ion-button>
+      <div *ngIf="savedPicture | async as vm">
+        <img [src]="vm.webPath" class="photo-viewer"/>
+      </div>
+      <br>
+      <!-- <ul class="remote-menu">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/feature-a">FeatureA</a></li>
+      </ul> -->
+    </div>
+  </div>
+<!-- </ion-content> -->

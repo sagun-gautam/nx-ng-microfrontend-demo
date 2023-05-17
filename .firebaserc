@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "micro-app-proto",
+    "default2": "micro-app-2"
+  },
+  "targets": {
+    "micro-app-proto": {
+      "hosting": {
+        "feature-a": [
+          "micro-app-proto"
+        ],
+        "feature-b": [
+          "micro-app-2"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

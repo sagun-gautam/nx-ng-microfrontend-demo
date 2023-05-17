@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "displayName": "My App",
+  "scripts": {
+    "serve": "ng serve",
+    "serve:beta": "ng serve --configuration beta",
+    "serve:prod": "ng serve --configuration production",
+    "build": "ng build",
+    "build:beta": "ng build --configuration beta",
+    "build:prod": "ng build --configuration production",
+    "android": "npx ionic capacitor run android --project='smart-app' --livereload --external",
+    "ios": "npx ionic capacitor run ios --project='smart-app' --livereload --external"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^4.7.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^4.7.3",
+    "@capacitor/app": "^4.1.1",
+    "@capacitor/camera": "^4.1.4",
+    "@capacitor/core": "^4.7.3",
+    "@capacitor/ios": "^4.7.3",
+    "@ionic/pwa-elements": "^3.1.1"
+  }
+}
